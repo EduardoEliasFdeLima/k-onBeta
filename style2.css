@@ -1,0 +1,242 @@
+@import url('https://fonts.cdnfonts.com/css/gill-sans');
+@import url('https://fonts.cdnfonts.com/css/klein-condensed-trial');
+@import url('https://fonts.cdnfonts.com/css/gill-sans-mt-condensed');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Gill Sans', sans-serif; */
+    /* font-family: 'Klein Condensed Trial', sans-serif; */
+    /* font-family: 'Gill Sans MT Condensed', sans-serif; */
+    /* font-family: 'Gill Sans MT', sans-serif; */
+    /* font-family: 'Gill Sans MT Ext Condensed Bold', sans-serif;
+    font-family: 'Gill Sans MT Light', sans-serif; */
+    font-family: 'Poppins', sans-serif;                                              
+}
+
+body{
+    background-color: #1a1818;
+    background-color: #fff;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+   
+}
+
+html{
+    /* transition: 2s; */
+    scroll-behavior: smooth;
+
+}
+
+
+.guia{
+    position: relative;
+    width: 100%;
+    padding: 50px 100px;
+    background-color: #f1f1f1;
+    background-color: #FBFBFB;
+    color: #fff;
+    color: #707070;   
+}
+
+.guia h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.content2{
+    width: 100%;
+    height: 400px;
+    margin: 20px auto;
+    position: relative;
+}
+
+
+.content2 ul{
+    list-style: none;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.content2 ul li{
+    margin-left: 4px;
+    float: right;
+}
+
+
+.imgTXT{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgBack2{
+    width: 220px;
+    height: 320px;
+    background-color: aqua;
+    border-radius: 8px;
+    transform: rotate(4deg);
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+
+.content2 ul li:nth-child(1) .imgBack2{
+    background-color: #537CB9;
+  
+}
+
+.content2 ul li:nth-child(2) .imgBack2{
+    background-color: #8A683B;
+}
+
+.content2 ul li:nth-child(3) .imgBack2{
+    background-color: #488B5C;
+}
+
+.content2 ul li:nth-child(4) .imgBack2{
+    background-color: #F2B63F;
+}
+
+.content2 ul li:nth-child(5) .imgBack2{
+    background-color: #B95226;
+}
+
+.imgBack2 img{
+    width: 220px;
+    height: 320px;
+    border-radius: 8px;
+    /* margin-left: -10px; */
+    transform: rotate(-3deg);
+}
+
+.ctt .txtguia{
+    text-align: left;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.ctt .txtguia h1{
+    position: absolute;
+    font-size: 35px;
+    text-transform: none;
+    left: 10px;
+    top: -50px;
+    text-indent: 10px;   
+}
+.ctt .txtguia h4{
+    padding-bottom: 10px;
+}
+
+.ctt .txtguia p{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+
+.nav_tabs{
+  
+
+}
+
+.nav_tabs ul{
+    list-style: none;
+}
+
+.nav_tabs ul li{
+    float: left;
+}
+
+.nav_tabs label{
+    width: 55px;
+    height: 55px;
+    color: #fff;
+
+    cursor: pointer;
+    display: block;
+   
+    padding: auto;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 5px;
+    background-color: #436494;
+
+}
+
+.rd_tabs:checked ~ label{
+    width: 60px;
+    height: 60px;
+    padding-top: 18px;
+
+}
+
+.rd_tabs{
+    display: none;
+}
+
+.ctt{
+    display: none;
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    left: 0;
+    margin-top: 0px;
+}
+
+
+
+.rd_tabs:checked ~ .ctt{
+    display: block;
+}
+
+
+.ctt ul li:nth-child(1) .imgBack2{
+    background-color: #537CB9;
+}
+
+.ctt ul li:nth-child(2) .imgBack2{
+    background-color: #8A683B;
+}
+
+.ctt ul li:nth-child(3) .imgBack2{
+    background-color: #488B5C;
+}
+
+.ctt ul li:nth-child(4) .imgBack2{
+    background-color: #F2B63F;
+}
+
+.ctt ul li:nth-child(5) .imgBack2{
+    background-color: #B95226;
+}
+
+  
+.light{
+    background-color: #ffffff;
+    color: #707070;
+}
+
+.dark{
+    background-color: #1a1818;
+    color: #fff;
+}
+
+.light2{
+    background-color: #FBFBFB;
+    color: #707070;
+}
+
+.dark2{
+    background-color: #1d1b1b;
+    color: #fff;
+}
