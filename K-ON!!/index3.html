@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>K-on!</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body >
+
+    <div class="volumes light">
+        <h1>Volumes do Mangá</h1>
+        <div class="MioVolumes">
+           
+            <div class="image">
+                <h2 id="hint">Clique nas capas para trocar o volume que Mio está lendo -></h2>
+                <img class="MioLe" id="VAITOMANOCU" src="./imgs/MioLendoVolume1.png" alt="">
+            </div>
+            <div class="vol">
+
+                <h3>Volumes Adaptados:</h3>
+                <ul>
+
+                    <li id="opt1" > 
+                        <input type="radio" name="tabs" class="rd" id="tab1" checked>
+                        <label for="tab1" id="tb1"><img onclick="Change(1)" id="" src="./imgs/vol1.jpg" alt=""></label>
+                    </li>
+
+                    <li id="opt2" onclick="Change(2)">
+                        <input type="radio" name="tabs" class="rd" id="tab2">
+                        <label for="tab2" id="tb2"><img onclick="Change(2)" id="" src="./imgs/vol2.jpg" alt=""></label>
+                    </li>
+
+                    <li id="opt3" onclick="Change(3)">
+                        <input type="radio" name="tabs" class="rd" id="tab3">
+                        <label for="tab3" id="tb3"><img onclick="Change(3)" id="" src="./imgs/vol3.jpg" alt=""></label>
+                    </li>
+
+                    <li id="opt4" onclick="Change(4)">
+                        <input type="radio" name="tabs" class="rd" id="tab4">
+                        <label for="tab4" id="tb4"><img onclick="Change(4)" id="" src="./imgs/vol4.jpg" alt=""></label>
+                    </li>
+
+                </ul>
+                <h3>Volumes não adaptados:</h3>
+                <ul>
+                    <li id="opt5" onclick="Change(5)">
+                        <input type="radio" name="tabs" class="rd" id="tab5">
+                        <label for="tab5" id="tb5"><img onclick="Change(5)" id="" src="./imgs/vol5.jpg" alt=""></label>
+                    </li>
+
+                    <li id="opt6" onclick="Change(6)">
+                        <input type="radio" name="tabs" class="rd" id="tab6">
+                        <label for="tab6" id="tb6"><img onclick="Change(6)" id="" src="./imgs/vol6.jpg" alt=""></label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="tabs" class="rd" id="tab7">
+                        <label for="tab7" id="tb7"><h2 id="tltCapa">K-on! Vol. 1</h2></label>
+                        
+                    </li>
+                    
+                </ul>     
+                
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    <script src="script.js"></script>
+
+    <script>
+
+            var lbl1 = document.querySelector('#tb1')
+            var lbl2 = document.querySelector('#tb2')
+            var lbl3 = document.querySelector('#tb3')
+            var lbl4 = document.querySelector('#tb4')
+            var lbl5 = document.querySelector('#tb5')
+
+
+        function Colorir(Number){
+
+            if(Number === 1){
+                lbl1.style.background = "#537CB9";
+                lbl2.style.background = "#436494";
+                lbl3.style.background = "#436494";
+                lbl4.style.background = "#436494";
+                lbl5.style.background = "#436494";
+            }
+
+            if(Number === 2){
+                lbl1.style.background = "#6a5334";
+                lbl2.style.background = "#8A683B";
+                lbl3.style.background = "#6a5334";
+                lbl4.style.background = "#6a5334";
+                lbl5.style.background = "#6a5334";
+            }
+
+            if(Number === 3){
+                lbl1.style.background = "#336b44";
+                lbl2.style.background = "#336b44";
+                lbl3.style.background = "#488B5C"; 
+                lbl4.style.background = "#336b44";
+                lbl5.style.background = "#336b44";
+            }
+
+            if(Number === 4){
+                lbl1.style.background = "#e2a01e";
+                lbl2.style.background = "#e2a01e";
+                lbl3.style.background = "#e2a01e";
+                lbl4.style.background = "#F2B63F";
+                lbl5.style.background = "#e2a01e";
+            }
+
+            if(Number === 5){
+                lbl1.style.background = "#8d4628";
+                lbl2.style.background = "#8d4628";
+                lbl3.style.background = "#8d4628";
+                lbl4.style.background = "#8d4628";
+                lbl5.style.background = "#B95226";
+            }           
+        }
+
+        function Change(NN){
+            //alert('oi')
+            var b = NN;
+            var FotoMio = document.querySelector('#VAITOMANOCU');
+            var some = document.querySelector('#hint');
+            //var Cap = document.querySelector('#VSF');
+            var tt = document.querySelector('#tltCapa');
+            //var bd = document.querySelector(`li#opt${b}`);
+            //var bdd = document.querySelector(`img#bdimg${b}`);
+
+            
+            //bdd.style.border = "2px solid #000";
+            
+            some.style.display = "none";
+                
+           
+            FotoMio.setAttribute('src', `./imgs/MioLendoVolume${b}.png`);
+            
+                //Cap.setAttribute('src', `./imgs/vol${b}.jpg`);
+
+               
+
+            if(NN <= 4){
+                tt.innerHTML = `K-on! Vol. ${b}`;
+            }else if(NN == 5){
+                tt.innerHTML = `K-on!<BR> HighSchool!`;
+            }else{
+                tt.innerHTML = `K-on! College!`;
+            }
+
+        
+        }
+
+    </script>
+    
+</body>
+</html>
